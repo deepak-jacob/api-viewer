@@ -1,0 +1,30 @@
+header {
+  position   : relative;
+  padding    : 20px;
+  background : $dark;
+
+  a {
+    text-decoration : none;
+  }
+
+  a.menu-three-dot {
+    display     : block;
+    position    : relative;
+    top         : -10px;
+    right       : -14px;
+    width       : 40px;
+    height      : 40px;
+    float       : right;
+    text-indent : -10000px;
+
+    &:after {
+      content     : '\2807';
+      display     : block;
+      position    : relative;
+      top         : -15px;
+      color       : #fff;
+      text-indent : 0;
+      font-size   : 34px;
+    }
+  }
+}

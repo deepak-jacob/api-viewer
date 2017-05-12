@@ -1,0 +1,10 @@
+{
+	"title": "Example project v0.54",
+	"apis" : [
+		{
+			"title": "Advertiser List",
+			"url": "/advertisers/",
+			"method": "GET"
+		}
+	]
+}

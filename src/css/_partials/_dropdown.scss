@@ -1,0 +1,38 @@
+  .dropdown-menu {
+    display       : block;
+    position      : absolute;
+    top           : 50px;
+    right         : 15px;
+    width         : 200px;
+    max-height    : 0;
+    float         : right;
+    padding       : 5px 0;
+    opacity       : 0;
+    overflow      : hidden;
+    border        : 1px solid $dark;
+    border-radius : 3px;
+    background    : white;
+    transition    : 0.2s;
+
+    &.show {
+      max-height : 200px;
+      opacity    : 1;
+    }
+
+    a {
+      display       : block;
+      padding       : 10px 0;
+      border-bottom : 1px solid $dark;
+      text-align    : left;
+      text-indent   : 15px;
+      font-size     : 0.8em;
+
+      &:last-child {
+        border : none;
+      }
+
+      &:hover {
+        color : #000;
+      }
+    }
+  }

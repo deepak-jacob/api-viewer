@@ -1,19 +1,32 @@
 import apiCofig from '../../../api-list.json'
+//import hljs from 'Highlight.js'
 
-export const ResponseSectionHtml = () => {
-	return `
-		<section class="response-section">
-
-		</section>`;
-}
+export const ResponseSectionHtml = () => ({
+  children: `<section class="response-section"><pre></pre></section>`
+})
 
 //side effects
 export const ResponseSectionActions = (state, lastState) => {
-	const responseNode = document.querySelector('.response-section')
-	if(state.currentApiIndex !== lastState.currentApiIndex) {
-		responseNode.textContent = apiCofig.apis[state.currentApiIndex].title
-	}
-	if(state.format !== lastState.format) {
-		responseNode.textContent = `${apiCofig.apis[state.currentApiIndex].title}?format=${state.format}`
-	}
+  if (state.currentApiIndex !== lastState.currentApiIndex || state.format !== lastState.format) {
+
+    const responseNode = document.querySelector('.response-section pre')
+    const api = apiCofig.apis[state.currentApiIndex];
+    const conf = {}
+    conf.method = api.method
+    conf.headers = api.headers || {}
+    if(api.body) {
+      conf.body = api.body
+    }
+
+    fetch(`${api.url}?format=${state.format}`, conf)
+      .then(res => res.json())
+      .then(json => {
+        responseNode.textContent =  JSON.stringify(json, undefined, 2)
+      })
+      .catch(e => {
+        console.log('Handle error', e)
+      })
+  }
 }
+
+

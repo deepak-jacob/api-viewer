@@ -1,5 +1,5 @@
 {
-  "name": "API View",
+  "name": "API-Viewer",
   "description": "API viewer can be used as a quick documentation and demo for apis.",
   "version": "0.10",
   "engines": {
@@ -50,6 +50,9 @@
   },
   "license": "UNLICENSED",
   "dependencies": {
+    "clean-webpack-plugin": "^0.1.16",
+    "copy-webpack-plugin": "^4.0.1",
+    "highlight.js": "^9.11.0",
     "rxjs": "^5.3.0"
   }
 }

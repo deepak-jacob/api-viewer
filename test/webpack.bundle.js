@@ -3,9 +3,9 @@
 'use strict';
 
 function load(modules) {
-	modules.keys().forEach(function(path){
-		modules(path);
-	});
+  modules.keys().forEach(function (path) {
+    modules(path);
+  });
 }
 
 load(require.context('./', true, /\.spec\.js$/));

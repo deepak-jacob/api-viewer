@@ -1,8 +1,8 @@
 {
-	"env": {
-		"mocha": true
-	},
-	"globals": {
-		"expect": false
-	}
+  "env": {
+    "mocha": true
+  },
+  "globals": {
+    "expect": false
+  }
 }

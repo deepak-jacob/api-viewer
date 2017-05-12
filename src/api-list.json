@@ -1,10 +1,10 @@
 {
-	"title": "Example project v0.54",
-	"apis" : [
-		{
-			"title": "Advertiser List",
-			"url": "/advertisers/",
-			"method": "GET"
-		}
-	]
+  "title": "Example project v0.54",
+  "apis": [
+    {
+      "title": "Advertiser List",
+      "url": "/response.json",
+      "method": "GET"
+    }
+  ]
 }

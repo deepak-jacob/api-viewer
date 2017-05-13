@@ -1,7 +1,7 @@
 .request-section {
 	max-width: 1170px;
-	padding: 20px;
-	margin: 60px auto 20px;
+	//padding: 20px 20px 0 20px;
+	margin: 60px auto 0;
 }
 
 .format-type-form {
@@ -9,8 +9,12 @@
 
 	.dropdown-menu  {
 		right: 0;
-		top: 33px;
+		top: 35px;
 	}
+}
+
+.request-url {
+  margin: 10px 0 10px;
 }
 
 aside {

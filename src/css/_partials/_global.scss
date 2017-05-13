@@ -10,25 +10,53 @@ body {
   &:before {
     content    : " ";
     display    : block;
-    height     : 3px;
+    height     : 5px;
     background : $red;
   }
 }
 
+a {
+  text-decoration: none;
+  color: $fontcolor;
+}
+
 .button-primary {
-  padding       : 5px 20px;
+  padding       : 5px 10px;
   border        : 1px solid $blue-sel ;
   border-radius : 2px;
   background    : $blue ;
   box-shadow    : 1px 1px 4px $blue ;
 
-	    color: #fff;
-    text-transform: uppercase;
-    font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1em;
+
+  &:after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+  }
+
 }
 
 h1 {
   text-align  : left;
-  font-size   : 2.2em;
+  font-size   : 2em;
   font-weight : 100;
+}
+
+.code-wrap {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+  background: #F6F6F8;
+  padding: 8px;
+  border: 1px solid #E1E1E9;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  border-radius: 5px;
 }

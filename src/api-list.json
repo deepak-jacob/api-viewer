@@ -3,7 +3,8 @@
   "apis": [
     {
       "title": "Advertiser List",
-      "url": "/response.json",
+      "url-json": "/response.json?format=api",
+      "url-xml": "/response.xml?format=api",
       "method": "GET"
     }
   ]

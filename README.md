@@ -64,5 +64,6 @@ If you'd like to see the output as files, just run `yarn run build` and the resu
 - Test on many more http methods like post, put, delete etc
 - Finish the test cases
 - Split bundlejs into vendor and app
-- Size of final main.js is now 131K, without 'babel-polyfill' it is 47K, find right config for babel-polyfill to import only what needed or remove babel-polyfill and use corejs to import only ES6 features used.
+- Size of final main.js is now 138K, without 'babel-polyfill' it is 54K, find right config for babel-polyfill to import only what needed or remove babel-polyfill and use corejs to import only ES6 features used.
+- CSS refactor, use colour variables, styled compoments
 

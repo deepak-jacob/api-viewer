@@ -1,6 +1,6 @@
 body {
+  color            : $fontcolor;
   background-color : $bg;
-	color            : $fontcolor;
   text-align       : left;
   font-family      : Verdana,
                      Geneva,
@@ -15,34 +15,36 @@ body {
   }
 }
 
+section {
+  width : 95%;
+}
+
 a {
-  text-decoration: none;
-  color: $fontcolor;
+  color           : $fontcolor;
+  text-decoration : none;
 }
 
 .button-primary {
-  padding       : 5px 10px;
-  border        : 1px solid $blue-sel ;
-  border-radius : 2px;
-  background    : $blue ;
-  box-shadow    : 1px 1px 4px $blue ;
-
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 1em;
+  padding        : 5px 10px;
+  color          : #fff;
+  border         : 1px solid $blue-sel;
+  border-radius  : 2px;
+  background     : $blue;
+  box-shadow     : 1px 1px 4px $blue;
+  text-transform : uppercase;
+  font-size      : 1em;
 
   &:after {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 2px;
-    vertical-align: middle;
-    border-top: 4px dashed;
-    border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+    content        : "";
+    display        : inline-block;
+    width          : 0;
+    height         : 0;
+    margin-left    : 2px;
+    border-top     : 4px dashed;
+    border-right   : 4px solid transparent;
+    border-left    : 4px solid transparent;
+    vertical-align : middle;
   }
-
 }
 
 h1 {
@@ -52,11 +54,14 @@ h1 {
 }
 
 .code-wrap {
-  font-family: Menlo, Monaco, "Courier New", monospace;
-  background: #F6F6F8;
-  padding: 8px;
-  border: 1px solid #E1E1E9;
-  font-size: 0.8em;
-  line-height: 1.5em;
-  border-radius: 5px;
+  padding       : 8px;
+  border        : 1px solid #E1E1E9;
+  border-radius : 5px;
+  background    : #F6F6F8;
+  font-family   : Menlo,
+                  Monaco,
+                  "Courier New",
+                  monospace;
+  font-size     : 0.8em;
+  line-height   : 1.5em;
 }

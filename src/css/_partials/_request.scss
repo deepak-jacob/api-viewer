@@ -1,22 +1,22 @@
 .request-section {
-	max-width: 1170px;
-	//padding: 20px 20px 0 20px;
-	margin: 60px auto 0;
+  max-width : 1170px;
+  margin    : 60px auto 0;
+  // padding: 20px 20px 0 20px;
 }
 
 .format-type-form {
-	position: relative;
+  position : relative;
 
-	.dropdown-menu  {
-		right: 0;
-		top: 35px;
-	}
+  .dropdown-menu {
+    top   : 35px;
+    right : 0;
+  }
 }
 
 .request-url {
-  margin: 10px 0 10px;
+  margin : 10px 0 10px;
 }
 
 aside {
-	float: right;
+  float : right;
 }

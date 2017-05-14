@@ -1,6 +1,7 @@
 import apiCofig from '../../../api-list.json'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism-twilight.css'
+import 'whatwg-fetch'
 
 //template
 export const ResponseSectionHtml = () => ({

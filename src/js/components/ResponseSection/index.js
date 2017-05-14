@@ -2,6 +2,7 @@ import apiCofig from '../../../api-list.json'
 import Prism from 'prismjs'
 import 'prismjs/themes/prism-twilight.css'
 
+//template
 export const ResponseSectionHtml = () => ({
   children: `
     <section class="response-section">

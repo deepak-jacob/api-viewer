@@ -4,7 +4,8 @@ const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
-const CleanWebpackPlugin = require('clean-webpack-plugin')
+const CleanWebpackPlugin = require('clean-webpack-plugin');
+const Visualizer = require('webpack-visualizer-plugin');
 
 module.exports = {
   cache: true,
@@ -43,7 +44,8 @@ module.exports = {
     new CopyWebpackPlugin([
       { from: 'mock' }
     ]),
-    new CleanWebpackPlugin(['build'])
+    new CleanWebpackPlugin(['build']),
+    new Visualizer()
   ],
   module: {
     rules: [{

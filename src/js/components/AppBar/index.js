@@ -1,4 +1,10 @@
-import { Observable } from 'rxjs/Rx'
+import { Observable } from 'rxjs/Observable'
+import 'rxjs/add/observable/fromEvent'
+import 'rxjs/add/operator/map'
+import 'rxjs/add/operator/filter'
+
+//TODO move this to ajax call so as we dont need a build each time
+//when we change api configs
 import apiCofig from '../../../api-list.json'
 
 //template

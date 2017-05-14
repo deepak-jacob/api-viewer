@@ -1,5 +1,6 @@
 import apiCofig from '../../../api-list.json'
 
+//template
 export const RequestSectionHtml = ({ children }) => ({
   children: `
     <section class="request-section">

@@ -21,6 +21,16 @@ export function compose(...funcs) {
   return funcs.reduce((a, b) => (...args) => a(b(...args)))
 }
 
+/**
+ * Combine will produce one single funciton that will call
+ * its arguments one by one.
+ *
+ * @param {...Function} funcs The functions to combine.
+ * @returns {Function} A function obtained by combining the argument functions
+ * For example, combine(f, g, h) is identical to doing
+ * f(...args); g(...args); g(...args);
+ */
+
 export function combine(...actions) {
   return (...args) => {
     actions.map(action => action(...args))

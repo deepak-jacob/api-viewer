@@ -1,5 +1,6 @@
-import { Observable } from 'rxjs/Rx'
+import { Observable } from 'rxjs/Observable'
 import apiCofig from '../../../api-list.json'
+import 'rxjs/add/observable/fromEvent'
 
 //template
 export const NavigationHtml = () => ({

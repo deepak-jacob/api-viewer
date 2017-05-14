@@ -1,10 +1,12 @@
-import { Observable } from 'rxjs/Rx'
+import { Observable } from 'rxjs/Observable'
+import 'rxjs/add/observable/fromEvent'
+import 'rxjs/add/operator/merge'
 
 //template
 export const FormatButtonHtml = () => ({
   children: `
     <form class="format-type-form">
-      <button class="button-primary">json</button>
+      <button type="button" class="button-primary">json</button>
       <div class="dropdown-menu">
         <a href="#" data-action="json">json</a>
         <a href="#" data-action="xml">xml</a>
@@ -34,7 +36,7 @@ const FormatChangeButtonObservable = () =>
     .map(stateReducerFormat)
 
 //reducer
-const stateReducerFormatButton = () => state => {
+const stateReducerFormatButton = (event) => state => {
   const isClickedToggle = event.target.matches('.format-type-form .button-primary')
   return Object.assign({}, state, {
     formatTypeOpen: isClickedToggle ? !state.formatTypeOpen : false
